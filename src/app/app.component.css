@@ -1,0 +1,65 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+h1,p{
+    color: #fff;
+    
+}
+.boxesBG{
+    background-color: #FFF;
+    margin: 2em;
+    text-align: center;
+    padding: 1em;
+}
+.boxesBG h3 {
+    color: #29AB87 !important;
+    font-weight: 600;
+}
+.btn btn-info{
+    color: #29AB87 !important;
+    background-color: #fff !important;
+}
+.btn-info {
+    color: #29AB87 !important;
+    background-color: #fff !important;
+    border: 1px solid #29AB87;
+}
+
+select {
+    word-wrap: normal;
+    color: #29AB87;
+    background-color: lightgray;
+    padding: 0.15em 1em;
+    border-radius: 0.3em;
+    font-weight: 600;
+    border: none;
+}
+
+
+.btn {
+    display: inline-block;
+    font-weight: 600 !important;
+    padding: 0.2rem 1rem !important;
+    border-radius: 0 !important;
+    font-size: 10px !important;
+}
+table {
+    width: 100%;
+}
+.textarea {
+    background-color: lightgray;
+    text-align: left;
+    padding: 5px;
+    margin: 0 17px;
+    border-radius: 8px;
+}
+.table-bordered thead, .table-bordered thead th {
+    border-bottom-width: 2px;
+    background-color: #f0f0f0;
+    color: grey;
+    font-weight: 500;
+}
+.table-bordered td, .table-bordered  {
+    border: 1px solid #dee2e6;
+    background-color: #D3D3D3;
+    color: gray;
+    font-weight: 500;
+}

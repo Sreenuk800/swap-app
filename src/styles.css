@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.multiselect-dropdown[_ngcontent-bud-c48] .dropdown-btn[_ngcontent-bud-c48] {
+    display: inline-block;
+    border: 1px solid #adadad;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.52857143;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border-radius: 4px;
+    color: cadetblue !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
