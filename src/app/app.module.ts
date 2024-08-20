@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule, DatePipe } from '@angular/common';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { NgSelectModule } from '@ng-select/ng-select';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
@@ -30,7 +29,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ReactiveFormsModule,
     CommonModule,
     BrowserAnimationsModule,
-    NgMultiSelectDropDownModule.forRoot(),
     MatTableModule,
     MatInputModule,
     MatPaginatorModule,
