@@ -14,7 +14,6 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent {
   
-  array:any=['Home','Dashboard']
   
 
   
@@ -25,7 +24,5 @@ export class AppComponent {
   
   ngOnInit() {
   }
-  
-  navigationData(){
-    this.router.navigateByUrl('/dashboard');  }
+
 }
