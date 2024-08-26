@@ -13,8 +13,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 import {MatSortModule} from '@angular/material/sort';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { StoreModule } from '@ngrx/store';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,9 @@ import { StoreModule } from '@ngrx/store';
     MatPaginatorModule,
     MatSelectModule,
     MatCardModule,
+    NgMultiSelectDropDownModule.forRoot(),
     MatSortModule,
+    NgSelectModule,
     StoreModule.forRoot({}, {})
   ],
   providers: [DatePipe],
