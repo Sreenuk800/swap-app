@@ -1,0 +1,51 @@
+<div class="container" [formGroup]="devForm">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <label for="" class="col-sm-3">Name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" formControlName="name">
+                </div>
+            </div>
+            <div class="row">
+                <label for="" class="col-sm-3">Age</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" formControlName="age">
+                </div>
+            </div>
+            <div class="row">
+               <button class="btn btn-primary" (click)="save()">Save</button>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                <button class="btn btn-secondary" style="float: right;" (click)="addArr()">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table">
+                      <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Delete</th>
+                      </tr>
+                      <tbody formArrayName="child"*ngFor="let a of devForm.get('child')['controls'];let i=index" >
+                        <tr formGroupName="{{i}}">
+                            <td>
+                            <input type="text" class="form-control" formControlName="name">
+                         </td>
+                         <td>
+                            <input type="text" class="form-control" formControlName="age">
+                         </td>
+                         <td> 
+                            <i class="fa fa-trash-o" style="font-size:48px;color:red;cursor: pointer;"
+                            (click)="deleteRow(i)"></i>
+                         </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

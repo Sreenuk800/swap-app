@@ -1,0 +1,27 @@
+@media (min-height: 30em) {
+  header {
+    position: fixed;
+  }
+  main {
+    margin-block-start: 4em;
+  }
+}
+header{
+  width: 100%;
+  text-align: center;
+}
+header {
+  padding: var(--metric-box-spacing);
+  background-color: hsl(140deg 70% 95%);
+  font-size: 1.4em;
+}
+.hello{
+  background-color: blueviolet;
+  color: red;
+}
+.box {
+  margin: 20px;
+  padding: 24px;
+  background-color: burlywood;
+  color: blue;
+}

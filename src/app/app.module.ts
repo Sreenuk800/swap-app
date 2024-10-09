@@ -15,29 +15,56 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSortModule} from '@angular/material/sort';
 import { StoreModule } from '@ngrx/store';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { SwapComponent } from './swap/swap.component';
+import { NgrxComponent } from './ngrx/ngrx.component';
+import { counterReducer } from './userReducer';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PracticeComponent } from './practice/practice.component';
+import { CustomePipe } from './custome.pipe';
+import { SwitchComponent } from './switch/switch.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { FormsComponent } from './forms/forms.component';
+import { MethodsComponent } from './methods/methods.component';
+import { HighlightDirective } from './highlight.directive';
+import { UserPipe } from './user.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponent,
+    HomeComponent,
+    SwapComponent,
+    NgrxComponent,
+    PracticeComponent,
+    CustomePipe,
+    SwitchComponent,
+    RxjsComponent,
+    FormsComponent,
+    MethodsComponent,
+    HighlightDirective,
+    UserPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     CommonModule,
     BrowserAnimationsModule,
     MatTableModule,
     MatInputModule,
-    MatPaginatorModule,
     MatSelectModule,
     MatCardModule,
     NgMultiSelectDropDownModule.forRoot(),
     MatSortModule,
     NgSelectModule,
-    StoreModule.forRoot({}, {})
+    ReactiveFormsModule,
+    StoreModule.forRoot({ count:counterReducer })
   ],
-  providers: [DatePipe],
+  providers: [DatePipe,CustomePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

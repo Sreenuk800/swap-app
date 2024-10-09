@@ -1,0 +1,18 @@
+.child-one {
+position: absolute;
+top: 10px;
+
+}
+.parent{
+    position: absolute;
+    height: 100vh;
+}
+.s {
+    position: sticky;
+}
+.sree{
+    padding: 20px;
+    margin: 15px;
+    background-color: azure;
+    color: blueviolet;
+}
